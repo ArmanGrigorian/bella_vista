@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/navbar/Navbar";
+import ServiceWorkerRegister from "@/components/layout/ServiceWorkerRegister";
 import { cn } from "@/utils";
 import type { Metadata, Viewport } from "next";
 import { Geist, Italianno } from "next/font/google";
@@ -83,7 +84,7 @@ export const metadata: Metadata = {
   other: {
     "theme-color": "#14532D",
   },
-  manifest: "/manifest.webmanifest",
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
@@ -102,6 +103,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(geistSans.variable, italiannoCursive.variable)}>
         <Navbar />
+        <ServiceWorkerRegister />
         {children}
       </body>
     </html>
