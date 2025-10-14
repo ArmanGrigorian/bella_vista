@@ -2,9 +2,9 @@
 
 @theme {
   /* sizes */
-  --width-full-hd: 1920px;
-  --min-width-full-hd: 1920px;
-  --max-width-full-hd: 1920px;
+  --width-2k: 2560px;
+  --min-width-2k: 2560px;
+  --max-width-2k: 2560px;
 
   /* background */
   --background-image-home: url("/images/restaurant-inside.webp");
